@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>订单信息</title>
+    <link rel="stylesheet" type="text/css" href="css/order.css"/>
+</head>
+<body>
+<div class="alreadyAddress">
+    <!--<p>陈佳佳 <span class="phoneInfo">139****5468</span></p>-->
+    <!--<div>湖北省武汉市洪山区惠东大道66号四大花园2栋17号</div>-->
+</div>
+
+<div class="orderCont">
+    <div class="cont1">
+        <img src="images/order.png"/>
+        <div>个人测评报告</div>
+        <p  class="oname">形式：U盘  <span>价格：0.00元</span></p>
+    </div>
+    <p class="clear p1">配送方式：<span>快递</span></p>
+    <p class="clear p2">运费：<span>15元</span></p>
+</div>
+<p class="clear b1"><span style="float: left">备注：</span><span><textarea rows="4" cols="37" class="detailedAddress" placeholder="想对我们说的话"></textarea></span></p>
+
+<div class="fixedBottom"><span class="total">合计：<i>￥15.00</i></span><span class="pay text-center" id="chooseWXPay">立即付款</span></div>
+</body>
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+<script src="js/setting.js"></script>
+<script src="js/order.js"></script>
+<script src="js/payment.js"></script>
+
+</html>

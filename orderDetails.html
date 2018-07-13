@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>订单详情</title>
+    <link rel="stylesheet" type="text/css" href="css/order.css"/>
+</head>
+<body>
+<div class="p0">
+    <p class="p1 p11">订单详情</p>
+    <p class="p1">订单编号：<span class="bkey"></span></p>
+    <p class="p1">支付方式：<span>微信支付</span></p>
+    <p class="p1">支付时间：<span class="bptime"></span></p>
+    <p class="p1">运费：<span>15元</span></p>
+</div>
+<div class="orderCont orderCont2">
+    <p class="p1 p11">服务详情</p>
+    <div class="cont1">
+        <img src="images/order.png"/>
+        <div>个人测评报告</div>
+        <p  class="oname">形式：U盘  <span>价格：0.00元</span></p>
+    </div>
+</div>
+
+<div class="p0">
+    <p class="p1 p11">配送详情</p>
+    <p class="p1 bphoto"><!--收货人：陈佳佳：<span>13980649189</span>--></p>
+    <div class="a1 bhome"><!--收货地址：湖北省武汉市洪山区惠东大道66号四大花园2栋17号--></div>
+
+    <p class="p1">承运快递：<span class="btransport">菜鸟裹裹</span></p>
+    <p class="p1">快递单号：<span class="bodd">71117608028745</span></p>
+    <p class="p1">物流状态：<span class="btype">待签收</span></p>
+</div>
+
+
+<button class="searchInfo text-center">查询物流</button>
+</body>
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/setting.js"></script>
+<script src="js/order.js"></script>
+<script>
+    token = sessionStorage.getItem("access_token");
+    $(document).ready(function() {
+        $.post(webSite+"/foreign/queryorderbuy?token="+token,function(data){
+            data = JSON.parse(data);
+            $(".bkey").html(data.data.bkey);
+            $(".bptime").html(data.data.bptime);
+            $(".bphoto").html('收货人：'+data.data.bname+'<span>'+data.data.bphoto+'</span>');
+            $(".bhome").html('<div class="a1">收货地址：'+data.data.bhome+'</div>');
+            if(data.data.btransport == null){
+
+                $(".btransport").html("暂无信息");
+            }else{
+                $(".btransport").html(data.data.btransport);
+            }
+            if(data.data.bodd == null){
+                $(".bodd").html("暂无信息");
+            }else{
+                $(".bodd").html(data.data.bodd);
+            }
+            if(0 == data.data.btype){
+                $(".btype").html("暂无信息");
+            }else if(1 == data.data.btype){
+                $(".btype").html("正在配货");
+            }else if(2 == data.data.btype){
+                $(".btype").html("已发货");
+            }else if(3 == data.data.btype){
+                $(".btype").html("已完成");
+            }
+
+        });
+    });
+    $(".searchInfo").click(function(){
+        window.location.href="/answerResolution/logistics.html";
+    });
+</script>
+</html>

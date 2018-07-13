@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>收货地址</title>
+    <link rel="stylesheet" type="text/css" href="css/address.css"/>
+</head>
+<body>
+<div class="addressHeader">
+    <img src="images/renHead.png"/>
+    您已成功通过验证
+</div>
+<div id="addressInfo">
+
+    <p>我们为您提供<i>免费</i>的测评报告，并会以<i>U盘</i>加密的方式邮寄给每位学生。您只需支付U盘成本费用和快递费用，此外，我们不再收取其他任何费用。请填写详细个人信息以保证测评报告安全顺利到达您手中。</p>
+</div>
+<!--没有地址-->
+<div class="addAddress" style="display: none">
+    <img src="images/add.png"/>
+    你还没填写地址
+    点击填写
+</div>
+<!--没有地址-->
+<!--有地址-->
+<div class="alreadyAddress"  style="display: none">
+    <!--<p>陈佳佳 <span class="phoneInfo">139****5468</span></p>-->
+    <!--<div>湖北省武汉市洪山区惠东大道66号四大花园2栋17号</div>-->
+</div>
+<!--有地址-->
+<button class="confirmPost text-center" disabled="disabled">确认邮寄</button>
+</body>
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/setting.js"></script>
+<script src="js/receipt.js"></script>
+</html>

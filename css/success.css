@@ -1,0 +1,134 @@
+*,body{
+      padding: 0;
+      margin: 0;
+  }
+ul li{
+    list-style: none;
+}
+body{
+    background-color: #f2f2f2;
+}
+.text-center{
+    text-align: center;
+}
+
+.successHead{
+    width: 90%;
+    padding: 9% 5%;
+    background: #5CC0E8;
+    color: #fff;
+    font-size: 0.8rem;
+}
+
+.successHead img{
+    width: 2.6rem;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 0.8rem;
+
+}
+.p0{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: #fff;
+}
+.p1{
+    height: 1.5rem;
+    line-height: 1.5rem;
+    font-size: 0.58rem;
+    padding-left: 5%;
+}
+.p1>span{
+    float: right;
+    margin-right: 5%;
+}
+.confirmInfo{
+    border: none;
+    width: 90%;
+    margin-left: 5%;
+    height: 2rem;
+    line-height: 2rem;
+    background-image: linear-gradient(90deg, #63C8F2 0%, #3394E6 100%);
+    color: #fff;
+    font-size: 0.7rem;
+    letter-spacing: 0.03rem;
+    margin-top: 1rem;
+    border-radius: 0.08rem;
+
+}
+
+/*物流详情*/
+.track-head{
+    width: 80%;
+    padding: 10% 10%;
+    background-color: #5CC0E8;
+}
+.track-head>img{
+    width: 100%;
+}
+.track-rcol{
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 0.6rem;
+    margin-top: 0.8rem;
+}
+.track-list{
+    padding-left: 5px;
+    position: relative;
+}
+.track-list>p{
+   margin-bottom: 0.5rem;
+}
+.track-list li{
+    position: relative;
+    padding: 0 0 0.5rem 0.5rem;
+    line-height: 18px;
+    border-left:2px dotted rgba(0,0,0,0.54);
+    color: #999;
+}
+.track-list li.first{
+    padding-top: 0;
+}
+.track-list li:last-child{
+    border-left:none;
+}
+.track-list li .node-icon{
+    top:0.16rem;
+    position: absolute;
+    left: -5px;
+    width: 0.4rem;
+    height: 0.4rem;
+    background: #5CC0E8;
+    background-size: 100%;
+    border-radius: 50%;
+}
+.track-list li.first .node-icon{
+    top:0;
+    width: 0.6rem;
+    height: 1.2rem;
+    background: url(../images/location.jpg) no-repeat;
+    background-size: 100%;
+    left: -8px;
+}
+.track-list li .time{
+    color: rgba(0,0,0,0.26);
+    font-size: 0.52rem;
+    margin-right: 0.4rem;
+    position: relative;
+    /*top: 4px;*/
+    display: inline-block;
+    vertical-align: middle;}
+.track-list li .txt{
+    line-height: 0.8rem;
+    max-width: 100%;
+    position: relative;
+    display: inline-block;
+    color: rgba(0,0,0,0.87);
+}
+.track-list li.first .time{
+    margin-right: 0.4rem;
+}
+.track-list li.first .txt{
+    max-width:100%;
+}

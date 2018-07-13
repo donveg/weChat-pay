@@ -1,0 +1,296 @@
+*,body{
+      padding: 0;
+      margin: 0;
+  }
+ul li{
+    list-style: none;
+}
+body{
+    background-color: #f2f2f2;
+}
+.text-center{
+    text-align: center;
+}
+textarea {
+    border: none;
+    font-size: 0.58rem;
+    outline: none;
+    padding-top: 0.1rem;
+
+}
+
+/*订单信息*/
+.alreadyAddress{
+    width: 88%;
+    padding:0.5rem 7% 0.5rem 5%;
+    background-color: #fff;
+}
+.alreadyAddress:after{
+    content: " ";
+    display: inline-block;
+    height: 0.4rem;
+    width: 0.4rem;
+    border-width: 2px 2px 0 0;
+    border-color: #c8c8cd;
+    border-style: solid;
+    -webkit-transform: matrix(.71,.71,-.71,.71,0,0);
+    transform: matrix(.71,.71,-.71,.71,0,0);
+    position: absolute;
+    top: 6%;
+    right: 0.6rem;
+}
+.alreadyAddress p{
+    font-size: 0.72rem;
+    height: 1.3rem;
+    line-height: 1.3rem;
+    letter-spacing: 0.04rem;
+}
+.alreadyAddress p span{
+    margin-left: 1rem;
+}
+.alreadyAddress div{
+    font-size: 0.58rem;
+    line-height: 1rem;
+    letter-spacing: 0.02rem;
+}
+.orderCont{
+    background-color: #fff;
+    width: 90%;
+    float: left;
+    padding: 0.5rem 5% 0 5%;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+
+}
+.cont1{
+    width: 100%;
+    float: left;
+    border-bottom: 0.04rem solid rgba(0,0,0,0.08);
+    padding: 0.5rem 5%;
+    margin-left: -5%;
+}
+.cont1 div{
+    float: left;
+    font-size: 0.68rem;
+    margin-left: 1rem;
+}
+.orderCont img{
+    float: left;
+    width: 1.8rem;
+}
+.orderCont p{
+
+    color: rgba(0,0,0,0.87);
+    font-size: 0.56rem;
+}
+.clear{
+    clear: both;
+}
+.p1,.p2{
+    width: 100%;
+    padding: 0.4rem 5%;
+    margin-left: -5%;
+    height: 1rem;
+    line-height: 1rem;
+    border-bottom: 0.04rem solid rgba(0,0,0,0.08);
+
+}
+.p2{
+    border-bottom:none;
+}
+.p1>span,.p2>span{
+    float: right;
+    color: rgba(0,0,0,0.54);
+}
+.b1{
+    width: 90%;
+    padding: 0.5rem 5% 0.5rem 5%;
+    font-size: 0.56rem;
+    margin-top: 0.5rem;
+    background-color: #fff;
+}
+.oname{
+    width: 10.7rem;
+    float: left;
+    margin-left: 1rem;
+    height: 1.4rem;
+    line-height: 1.4rem;
+    font-size: 0.56rem!important;
+    color: rgba(0,0,0,0.54)!important;
+}
+.oname span{
+    float: right;
+}
+.fixedBottom{
+    width: 100%;
+    height: 2rem;
+    line-height: 2rem;
+    position: absolute;
+    bottom: 0;
+    background-color: #fff;
+}
+.fixedBottom span{
+    float: left;
+    display: inline-block;
+    font-size: 0.6rem;
+}
+.total {
+    width: 9rem;
+    text-align: right;
+}
+.total>i {
+   font-style: normal;
+    color: #F74343;
+}
+.pay{
+    width: 5rem;
+    height: 2rem;
+    float: right!important;
+    color: #fff;
+    font-size: 0.68rem!important;
+    background-image: linear-gradient(90deg, #63C8F2 0%, #3394E6 100%);
+}
+
+/*订单详情*/
+.p0{
+    width: 90%;
+    float: left;
+    padding-bottom: 0.5rem;
+    background-color: #fff;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.p11{
+    height: 1rem!important;
+    line-height: 1rem!important;
+    font-size: 0.58rem;
+    padding-left: 5%;
+    border-bottom: 0.04rem solid rgba(0,0,0,0.08) !important;
+    font-size: 0.68rem!important;
+    color: #000!important;
+}
+.p1{
+    height: 0.4rem;
+    line-height:0.4rem;
+    font-size: 0.58rem;
+    padding-left: 5%;
+    border-bottom: none;
+    color: rgba(0,0,0,0.54);
+}
+.p1>span{
+    float: right;
+}
+.a1{
+    line-height: 1rem;
+    padding-left: 5%;
+    padding-right: 5%;
+    color: rgba(0,0,0,0.54);
+    font-size: 0.58rem;
+    border-bottom: 0.04rem solid rgba(0,0,0,0.08);
+    width: 100%;
+    margin-left: -5%;
+    padding-bottom: 0.5rem;
+}
+.orderCont2{
+    padding: 0 5% !important;
+}
+
+.searchInfo {
+    border: none;
+    width: 90%;
+    margin-left: 5%;
+    height: 2rem;
+    line-height: 2rem;
+    background-image: linear-gradient(90deg, #63C8F2 0%, #3394E6 100%);
+    color: #fff;
+    font-size: 0.7rem;
+    letter-spacing: 0.03rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* 我的订单切换*/
+#tab{
+    position:relative;
+    font-size: 0.65rem;
+    background-color: #fff;
+}
+
+#tab .tabList ul li{
+    float:left;
+    height: 1.6rem;
+    line-height: 1.6rem;
+    background-color: #fff;
+    width:20%;
+    text-align:center;
+    position:relative;
+    cursor:pointer;
+}
+#tab .tabCon{
+    width: 100%;
+    position:absolute;
+    top:2.1rem;
+}
+#tab .tabCon div{
+
+    position:absolute;
+    opacity:0;
+    filter:alpha(opacity=0);
+}
+#tab .tabList li.cur span{
+    display: inline-block;
+    height: 1.6rem;
+    color: #39ADDB;
+    border-bottom:0.04rem solid #39ADDB;
+}
+#tab .tabCon div.cur{
+    opacity:1;
+    filter:alpha(opacity=100);
+}
+#tab .tabCon ul li{
+    width: 90%;
+    padding: 0.3rem 5%;
+    min-height:5rem;
+    background-color: #fff;
+    margin-bottom: 0.5rem;
+}
+#tab .tabCon ul li p{
+    height: 1.5rem;
+    line-height: 1.5rem;
+}
+#tab .tabCon ul li .p3{
+    font-size: 0.52rem;
+    color: rgba(0,0,0,0.54);
+    border-bottom: 0.04rem solid rgba(0,0,0,0.3);
+    margin-bottom: 0.5rem;
+}
+.line{
+    margin-top: 0.5rem;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+#tab .tabCon ul li p span{
+    float: right;
+}
+#tab .tabCon ul li label{
+    margin-left: 1rem;
+}
+#tab .tabCon ul li img{
+    width: 1.8rem;
+    float: left;
+}
+#tab .tabCon ul li button{
+    float: right;
+    width: 2.8rem;
+    height: 1.1rem;
+    line-height: 1.1rem;
+    border: 1px solid rgba(0,0,0,0.40);
+    border-radius: 4px;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+    background: #fff;
+    color: rgba(0,0,0,0.54);
+}
+.f1{
+    border:1px solid #39ADDB!important;
+    color: #39ADDB!important;
+}

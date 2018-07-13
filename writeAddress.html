@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>填写地址</title>
+    <link href="css/jquery-weui.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/address.css"/>
+</head>
+<body>
+<section class="addressList">
+    <p>姓名：<span><input type="text" class="realname" value=""/></span></p>
+    <p>电话：<span><input type="text" class="phone" value=""/></span></p>
+    <p style="position: relative">所在地区：<input type='text' id='city-picker' placeholder='请选择省市区县' /><span class="weui-cell__ft"></span></p>
+    <p class="detailed"><span style="float: left">详细地址：</span><textarea rows="4" cols="30" class="detailedAddress"></textarea></p>
+
+</section>
+    <div class="errorInfo text-center"></div>
+    <div class="save">保存地址</div>
+</body>
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery-weui/1.0.1/js/jquery-weui.min.js"></script>
+<script src="js/city-picker.min.js"></script>
+<script src="js/setting.js"></script>
+
+<script>
+    $("#city-picker").cityPicker({
+        title: "选择省市区/县",
+        onChange: function (picker, values, displayValues) {
+            console.log(values, displayValues);
+        },
+    });
+
+</script>
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/receipt.js"></script>
+</html>
